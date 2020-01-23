@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="webapp.css">
+    <title>Messages</title>
+</head>
+<body>
+    <h1>Web Application</h1>
+    <form action="/comments" method="post">
+            <div>
+                <label for="login"> Name </label>
+                <br>
+                <input type="text" name="login" id="login">
+            </div>
+            <br>
+            <div>
+                <label for="comments"> Comment </label>
+                <br>
+                <textarea name="comments" id="comments">
+                    Type here...
+                </textarea>
+            </div>
+        <button type="submit">Send comment</button>
+    </form>
+    <h3>Comments</h3>
+    <ul id="commentlist"></ul>
+
+<script src="main.js"</script>
+</body>
+</html>
